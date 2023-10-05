@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UDP_Client.props" />
+</Project>

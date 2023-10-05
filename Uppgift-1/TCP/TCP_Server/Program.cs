@@ -29,7 +29,6 @@ class TcpServerExample
 
         Console.WriteLine("Received: {0}", completeMessage);
 
-        // Just send an acknowledgment instead of echoing the data
         string acknowledgment = "Data received!";
         byte[] msg = Encoding.UTF8.GetBytes(acknowledgment);
         stream.Write(msg, 0, msg.Length);

@@ -1,34 +1,45 @@
-namespace UDP_Server
+using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using Newtonsoft.Json;
+using UDP_Client.Classes;
+
+public class UDPListener
 {
-    public class Program
+    private const int listenPort = 11000;
+
+    private static void StartListener()
     {
-        public static void Main(string[] args)
+        UdpClient listener = new UdpClient(listenPort);
+        IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
+
+        try
         {
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-            builder.Services.AddRazorPages();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            while (true)
             {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                Console.WriteLine("Waiting for broadcast");
+                byte[] bytes = listener.Receive(ref groupEP);
+                string jsonData = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
+
+                Person person = JsonConvert.DeserializeObject<Person>(jsonData);
+
+                Console.WriteLine($"Received broadcast from {groupEP} :");
+                Console.WriteLine($"Name: {person.Name}, Age: {person.Age}, Birth: {person.Birth}");
             }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.MapRazorPages();
-
-            app.Run();
         }
+        catch (SocketException e)
+        {
+            Console.WriteLine(e);
+        }
+        finally
+        {
+            listener.Close();
+        }
+    }
+
+    public static void Main()
+    {
+        StartListener();
     }
 }

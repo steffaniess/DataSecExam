@@ -1,34 +1,40 @@
-namespace UDP_Client
+using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+
+public class UDPListener
 {
-    public class Program
+    private const int listenPort = 11001;
+
+    private static void StartListener()
     {
-        public static void Main(string[] args)
+        UdpClient listener = new UdpClient(listenPort);
+        IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
+
+        try
         {
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-            builder.Services.AddRazorPages();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            while (true)
             {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                Console.WriteLine("Waiting for broadcast");
+                byte[] bytes = listener.Receive(ref groupEP);
+
+                Console.WriteLine($"Received broadcast from {groupEP} :");
+                Console.WriteLine($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
             }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.MapRazorPages();
-
-            app.Run();
         }
+        catch (SocketException e)
+        {
+            Console.WriteLine(e);
+        }
+        finally
+        {
+            listener.Close();
+        }
+    }
+
+    public static void Main()
+    {
+        StartListener();
     }
 }
