@@ -7,43 +7,34 @@ class TcpServerExample
 {
     static void Main()
     {
-        // Set the TcpListener on port 8080.
         Int32 port = 7281;
         IPAddress localAddr = IPAddress.Parse("127.0.0.1");
-
-        // Create a TcpListener to accept client connections
         TcpListener server = new TcpListener(localAddr, port);
         server.Start();
         Console.WriteLine("Waiting for a connection...");
 
-        // Perform a blocking call to accept requests.
         using TcpClient client = server.AcceptTcpClient();
         Console.WriteLine("Connected!");
 
-        // Get a stream object for reading and writing
         using NetworkStream stream = client.GetStream();
 
         byte[] bytes = new byte[256];
-        int i;
+        StringBuilder completeMessage = new StringBuilder();
 
-        // Loop to receive all the data sent by the client.
+        int i;
         while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
         {
-            // Translate data bytes to an ASCII string.
-            string data = Encoding.ASCII.GetString(bytes, 0, i);
-            Console.WriteLine("Received: {0}", data);
-
-            // Process the data sent by the client.
-            data = data.ToUpper();
-
-            byte[] msg = Encoding.ASCII.GetBytes(data);
-
-            // Send back a response.
-            stream.Write(msg, 0, msg.Length);
-            Console.WriteLine("Sent: {0}", data);
+            completeMessage.Append(Encoding.UTF8.GetString(bytes, 0, i));
         }
 
-        // Shutdown and end connection
+        Console.WriteLine("Received: {0}", completeMessage);
+
+        // Just send an acknowledgment instead of echoing the data
+        string acknowledgment = "Data received!";
+        byte[] msg = Encoding.UTF8.GetBytes(acknowledgment);
+        stream.Write(msg, 0, msg.Length);
+        Console.WriteLine("Acknowledgment sent");
+
         client.Close();
         Console.WriteLine("Client disconnected");
     }
