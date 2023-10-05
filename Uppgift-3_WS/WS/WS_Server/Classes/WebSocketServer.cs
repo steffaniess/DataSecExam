@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.WebSockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
-
-namespace WSClient.Classes
+namespace WebSocketServerApp
 {
-    public class WebSocketServer
+    public class Program
     {
-        static async Task Main()
+        public static async Task Main(string[] args)
         {
             var httpListener = new HttpListener();
             httpListener.Prefixes.Add("http://localhost:8080/");
             httpListener.Start();
-
-            Console.WriteLine("WebSocket server is running..");
+            Console.WriteLine("WebSocket server started at ws://localhost:8080/");
 
             while (true)
             {
@@ -25,48 +23,39 @@ namespace WSClient.Classes
                 if (context.Request.IsWebSocketRequest)
                 {
                     var webSocketContext = await context.AcceptWebSocketAsync(null);
-                    var webSocket = webSocketContext.WebSocket;
-
-                    await HandleWebSocketConnection(webSocket);
+                    HandleWebSocketConnection(webSocketContext.WebSocket);
                 }
                 else
                 {
                     context.Response.StatusCode = 400;
                     context.Response.Close();
                 }
-                static async Task HandleWebSocketConnection(WebSocket webSocket)
-                {
-                    try
-                    {
-                        while (webSocket.State == WebSocketState.Open)
-                        {
-                            var buffer = new byte[1024];
-                            var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+            }
+        }
 
-                            if (result.MessageType == WebSocketMessageType.Text)
-                            {
-                                var receivedData = Encoding.UTF8.GetString(buffer, 0, result.Count);
-                                Console.WriteLine($"Received: {receivedData}");
+        private static async void HandleWebSocketConnection(WebSocket webSocket)
+        {
+            var buffer = new byte[1024];
 
-                                //Stimulate the server to answer with Json-data
-                                var responseData = new { message = "Server response", timespan = DateTime.Now };
-                                //var responseJson = Newtonsoft.Json.JsonConvert.SerializeObject(responseData);
-                                var responseBytes = Encoding.UTF8.GetBytes(receivedData);
+            try
+            {
+                var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+                var message = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                Console.WriteLine($"Received: {message}");
 
-                                await webSocket.SendAsync(new ArraySegment<byte>(responseBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+                var responseData = new { greeting = "Hello from the server!", timestamp = DateTime.Now };
+                var responseJson = JsonConvert.SerializeObject(responseData);
+                buffer = Encoding.UTF8.GetBytes(responseJson);
 
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"WebSocket error: {ex.Message}");
-                    }
-                    finally
-                    {
-                        webSocket.Dispose();
-                    }
-                }
+                await webSocket.SendAsync(new ArraySegment<byte>(buffer), WebSocketMessageType.Text, true, CancellationToken.None);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+            }
+            finally
+            {
+                webSocket.Dispose();
             }
         }
     }
