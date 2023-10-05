@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TCP_Server.props" />
+</Project>
