@@ -1,0 +1,8 @@
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.csproj.AssemblyReference.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.AssemblyInfoInputs.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.AssemblyInfo.cs
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.csproj.CoreCompileInputs.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.RazorAssemblyInfo.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-3\WS\WS_Client\obj\Debug\net7.0\WS_Client.RazorAssemblyInfo.cs

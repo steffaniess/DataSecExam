@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+IR+oFmL11XXO+M+d+BMt6YLZL/rSBnWjOyongIMFzv1dZgkXTc85o6Yqk16UytUdQ486QLNaHs2dUj37+k0pg==",
+  "dgSpecHash": "uZw1HUSTZVQKwLAlnQUPGkNflQBv3ICXHdUTDh1PuibY1OpdR6GvDxTBuNuat1Pw+ELkVP4eUrJG6wbujGgNuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-3\\WS_Server\\WS_Server.csproj",
+  "projectFilePath": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-3\\WS\\WS_Server\\WS_Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.3\\microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
