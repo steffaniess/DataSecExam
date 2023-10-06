@@ -1,23 +1,37 @@
-﻿<h2>Temperature Updates</h2>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... Dina andra head-element ... -->
+    <title>Din sida</title>
+</head>
+<body>
 
-<div id="temperatureData">
-    <!-- Temperature updates will be populated here -->
-</div>
+    <!-- Temperature Display Section -->
+    <div id="temperatureData">
+        <!-- Temperatures will be displayed here -->
+    </div>
 
-@section Scripts {
-    <!-- Reference to SignalR JavaScript library -->
+    <!-- SignalR script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.9/signalr.min.js"></script>
 
+    <!-- Din egen JavaScript-kod -->
     <script type="text/javascript">
-        const connection = new signalR.HubConnectionBuilder()
-            .withUrl("/temperatureHub") // Ensure this URL matches the URL of your SignalR Hub
+        let connection = new signalR.HubConnectionBuilder()
+            .withUrl("/temperatureHub")
             .build();
 
-        connection.on("ReceiveTemperature", (temperature) => {
-            // Update the DOM with the received temperature
-            document.getElementById("temperatureData").innerHTML += `<p>${temperature}</p>`;
+        connection.on("ReceiveTemperature", function (temperature) {
+            // Update the temperatureData div with the new temperature
+            let tempElement = document.createElement("div");
+            tempElement.innerHTML = `Temperature: ${temperature}`;
+            document.getElementById("temperatureData").appendChild(tempElement);
         });
 
-        connection.start();
+        connection.start()
+            .catch(function (err) {
+                return console.error(err.toString());
+            });
     </script>
-}
+
+</body>
+</html>
