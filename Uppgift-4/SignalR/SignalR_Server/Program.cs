@@ -1,8 +1,12 @@
 
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.AspNetCore.Builder;
+
 namespace SignalR_Server
 {
     public class Program
     {
+
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +17,7 @@ namespace SignalR_Server
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddSignalR();
 
             var app = builder.Build();
 
@@ -26,6 +31,7 @@ namespace SignalR_Server
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+            app.MapHub<TemperatureHub>("/temperatureHub");
 
             var summaries = new[]
             {

@@ -1,0 +1,7 @@
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.csproj.AssemblyReference.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.AssemblyInfoInputs.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.AssemblyInfo.cs
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.csproj.CoreCompileInputs.cache
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR_Server\obj\Debug\net7.0\SignalR_Server.MvcApplicationPartsAssemblyInfo.cache
