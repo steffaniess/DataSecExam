@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR_Server", "SignalR_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR-Client", "SignalR-Client\SignalR-Client.csproj", "{D93C222D-D41F-43C2-93BD-645A9E6898C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR-MVC", "SignalR-MVC\SignalR-MVC.csproj", "{7EBA42F2-4F4A-4377-AE6D-B9E2C7C68F73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureWebApp", "SignalR-MVC\TemperatureWebApp.csproj", "{7EBA42F2-4F4A-4377-AE6D-B9E2C7C68F73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

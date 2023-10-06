@@ -23,10 +23,13 @@ namespace SignalR_Client.Classes
             _hubConnection = new HubConnectionBuilder()
                 .WithUrl(_hubUrl)
                 .Build();
+
+            //start connection to SignalR-hub
+            await _hubConnection.StartAsync();
         }
         public async Task ReportTemperatureAsync()
         {
-            if (_hubConnection == null)
+            if (_hubConnection == null || _hubConnection.State == HubConnectionState.Disconnected)
             {
                 await InitializeConnectionAsync();
             }

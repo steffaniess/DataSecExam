@@ -1,0 +1,23 @@
+﻿<h2>Temperature Updates</h2>
+
+<div id="temperatureData">
+    <!-- Temperature updates will be populated here -->
+</div>
+
+@section Scripts {
+    <!-- Reference to SignalR JavaScript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.9/signalr.min.js"></script>
+
+    <script type="text/javascript">
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/temperatureHub") // Ensure this URL matches the URL of your SignalR Hub
+            .build();
+
+        connection.on("ReceiveTemperature", (temperature) => {
+            // Update the DOM with the received temperature
+            document.getElementById("temperatureData").innerHTML += `<p>${temperature}</p>`;
+        });
+
+        connection.start();
+    </script>
+}

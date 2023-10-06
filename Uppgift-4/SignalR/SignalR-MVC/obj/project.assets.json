@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\SignalR-MVC.csproj",
-      "projectName": "SignalR-MVC",
-      "projectPath": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\SignalR-MVC.csproj",
+      "projectUniqueName": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\TemperatureWebApp.csproj",
+      "projectName": "TemperatureWebApp",
+      "projectPath": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\TemperatureWebApp.csproj",
       "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\obj\\",
       "projectStyle": "PackageReference",
