@@ -28,6 +28,7 @@ namespace SignalR_MVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        //New view for temperature
         public IActionResult Temperature()
         {
             return View();

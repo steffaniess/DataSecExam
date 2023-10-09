@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... Dina andra head-element ... -->
+    <!-- Head-element ... -->
     <title>Din sida</title>
 </head>
 <body>
 
     <!-- Temperature Display Section -->
     <div id="temperatureData">
-        <!-- Temperatures will be displayed here -->
+        <!-- Temperatures -->
     </div>
 
     <!-- SignalR script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.9/signalr.min.js"></script>
 
-    <!-- Din egen JavaScript-kod -->
+    <!-- JavaScript -->
     <script type="text/javascript">
         let connection = new signalR.HubConnectionBuilder()
             .withUrl("/temperatureHub")
