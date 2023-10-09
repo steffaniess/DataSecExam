@@ -29,3 +29,11 @@ C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säk
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\obj\Debug\net7.0\TCP_Server.pdb
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\obj\Debug\net7.0\TCP_Server.genruntimeconfig.cache
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\obj\Debug\net7.0\ref\TCP_Server.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\bin\Debug\net7.0\TCP_Client.deps.json
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\bin\Debug\net7.0\TCP_Client.runtimeconfig.json
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\bin\Debug\net7.0\TCP_Client.staticwebassets.runtime.json
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\bin\Debug\net7.0\TCP_Client.exe
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\bin\Debug\net7.0\TCP_Client.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\bin\Debug\net7.0\TCP_Client.pdb
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\obj\Debug\net7.0\TCP_Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-1\TCP\TCP_Server\obj\Debug\net7.0\TCP_Server.csproj.CopyComplete

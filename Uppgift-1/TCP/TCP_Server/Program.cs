@@ -1,9 +1,12 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
+using TCP_Client.Classes;
 
-class TcpServerExample
+class TcpServer
 {
     static void Main()
     {
@@ -29,6 +32,10 @@ class TcpServerExample
 
         Console.WriteLine("Received: {0}", completeMessage);
 
+        //Deserialise JSON-data to an object
+        Car recievedCar = JsonSerializer.Deserialize<Car>(completeMessage.ToString());
+
+        //answere to client
         string acknowledgment = "Data received!";
         byte[] msg = Encoding.UTF8.GetBytes(acknowledgment);
         stream.Write(msg, 0, msg.Length);
