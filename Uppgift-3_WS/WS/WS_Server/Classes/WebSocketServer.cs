@@ -12,11 +12,14 @@ namespace WebSocketServerApp
     {
         public static async Task Main(string[] args)
         {
+
+            //Starta HTTP-Listener that listens to Websockets-requests
             var httpListener = new HttpListener();
             httpListener.Prefixes.Add("http://localhost:8080/");
             httpListener.Start();
             Console.WriteLine("WebSocket server started at ws://localhost:8080/");
 
+            //Handle incoming Websockets-requests
             while (true)
             {
                 var context = await httpListener.GetContextAsync();
@@ -27,6 +30,7 @@ namespace WebSocketServerApp
                 }
                 else
                 {
+                    //If request is not Websoccket-request, send errorcode 400(Bad request)
                     context.Response.StatusCode = 400;
                     context.Response.Close();
                 }
