@@ -8,6 +8,19 @@ namespace SignalR_MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSignalR();
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: "OpenArms",
+                                  policy =>
+                                  {
+                                      policy.WithOrigins("http://localhost/", "https://localhost:7122")
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod()
+                                      .AllowCredentials();
+                                  });
+            });
 
             var app = builder.Build();
 
