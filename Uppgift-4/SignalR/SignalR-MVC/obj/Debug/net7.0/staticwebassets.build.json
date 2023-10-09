@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/2UttoV/q4E7U+M+2MblflsGCMsInpR6RS0y3elEXMY=",
+  "Hash": "iWXdB+OT80wW0UDSUmYdDBlzK79kc+wqvlp8O4OsXas=",
   "Source": "TemperatureWebApp",
   "BasePath": "_content/TemperatureWebApp",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\wwwroot\\js\\temperaure.js",
+      "SourceId": "TemperatureWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\wwwroot\\",
+      "BasePath": "_content/TemperatureWebApp",
+      "RelativePath": "js/temperaure.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\temperaure.js"
     },
     {
       "Identity": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

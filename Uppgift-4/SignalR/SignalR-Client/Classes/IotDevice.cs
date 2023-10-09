@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +21,24 @@ namespace SignalR_Client.Classes
         }
         public async Task InitializeConnectionAsync()
         {
-            _hubConnection = new HubConnectionBuilder()
-                .WithUrl(_hubUrl)
-                .Build();
+            try
+            {
+                _hubConnection = new HubConnectionBuilder()
+                               .WithUrl(_hubUrl)
+                                .ConfigureLogging(logging => {
+                                    logging.AddConsole();
+                                    logging.SetMinimumLevel(LogLevel.Debug);
+                                })
+                               .Build();
 
-            //start connection to SignalR-hub
-            await _hubConnection.StartAsync();
+                //start connection to SignalR-hub
+                await _hubConnection.StartAsync();
+                Console.WriteLine("Successfully connected to hub.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error connecting to hub: {ex.Message}");
+            }
         }
         public async Task ReportTemperatureAsync()
         {
@@ -36,9 +49,19 @@ namespace SignalR_Client.Classes
              
             while (true) 
             {
-                var temperature = _random.Next(-20, 50);
-                await _hubConnection.SendAsync("SendTemperature", temperature.ToString());
+                try
+                {
+                    var temperature = _random.Next(-20, 50);
+                    await _hubConnection.SendAsync("SendTemperature", temperature.ToString());
+                    Console.WriteLine($"Sent temperature: {temperature}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error sending temperature: {ex.Message}");
+                }
                 await Task.Delay(5000); //varje rapport uppdateras var 5e min
+
+
             }
         }
     }

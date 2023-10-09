@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[8.0.0-rc.1.23421.29, )"
             },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23419.4, )"
+            },
             "System.Security.Cryptography.Cng": {
               "target": "Package",
               "version": "[6.0.0-preview.4.21253.7, )"

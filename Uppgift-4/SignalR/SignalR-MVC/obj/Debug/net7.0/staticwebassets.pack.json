@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\wwwroot\\js\\temperaure.js",
+      "PackagePath": "staticwebassets\\js\\temperaure.js"
+    },
+    {
       "Id": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\SignalR-MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
