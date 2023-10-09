@@ -7,7 +7,7 @@ using UDP_Client.Classes;
 
 public class UDPListener
 {
-    private const int listenPort = 11000;
+    private const int listenPort = 11001;
 
     private static void StartListener()
     {

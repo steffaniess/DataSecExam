@@ -29,3 +29,5 @@ C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säk
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-2\UDP\UDP_Client\obj\Debug\net7.0\UDP_Client.pdb
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-2\UDP\UDP_Client\obj\Debug\net7.0\UDP_Client.genruntimeconfig.cache
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-2\UDP\UDP_Client\obj\Debug\net7.0\ref\UDP_Client.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-2\UDP\UDP_Client\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-2\UDP\UDP_Client\obj\Debug\net7.0\UDP_Client.csproj.CopyComplete
