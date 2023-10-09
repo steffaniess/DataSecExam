@@ -52,6 +52,10 @@ namespace SignalR_Client.Classes
                 try
                 {
                     var temperature = _random.Next(-20, 50);
+
+                    //Crypting temperature before it is send
+                    string encryptedTemperature = DpapiEncryption.Encrypt(temperature.ToString());
+
                     await _hubConnection.SendAsync("SendTemperature", temperature.ToString());
                     Console.WriteLine($"Sent temperature: {temperature}");
                 }

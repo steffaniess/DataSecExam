@@ -445,6 +445,22 @@
           }
         }
       },
+      "System.Security.Cryptography.ProtectedData/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Text.Encodings.Web/8.0.0-rc.1.23419.4": {
         "type": "package",
         "compile": {
@@ -1240,6 +1256,39 @@
         "system.security.cryptography.cng.nuspec"
       ]
     },
+    "System.Security.Cryptography.ProtectedData/7.0.1": {
+      "sha512": "3evI3sBfKqwYSwuBcYgShbmEgtXcg8N5Qu+jExLdkBXPty2yGDXq5m1/4sx9Exb8dqdeMPUs/d9DQ0wy/9Adwg==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.security.cryptography.protecteddata.7.0.1.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.Encodings.Web/8.0.0-rc.1.23419.4": {
       "sha512": "p7x+hBP1/7bC+KXeFARIUP00MHbm796rWB8iqO8Ag2ML6SB13qbs3240nvdHwA3vLpVEOMCFhrbJoJf81QDMiw==",
       "type": "package",
@@ -1385,6 +1434,7 @@
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.0-rc.1.23421.29",
       "Microsoft.Extensions.Logging.Console >= 8.0.0-rc.1.23419.4",
       "System.Security.Cryptography.Cng >= 6.0.0-preview.4.21253.7",
+      "System.Security.Cryptography.ProtectedData >= 7.0.1",
       "System.Text.Json >= 8.0.0-rc.1.23419.4"
     ]
   },
@@ -1444,6 +1494,10 @@
           "System.Security.Cryptography.Cng": {
             "target": "Package",
             "version": "[6.0.0-preview.4.21253.7, )"
+          },
+          "System.Security.Cryptography.ProtectedData": {
+            "target": "Package",
+            "version": "[7.0.1, )"
           },
           "System.Text.Json": {
             "target": "Package",

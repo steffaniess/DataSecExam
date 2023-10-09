@@ -4,9 +4,10 @@ namespace SignalR_Server
 {
     public class TemperatureHub : Hub
     {
-        public async Task SendTemperature(string temperature)
+        public async Task SendTemperature(string encryptedTemperature)
         {
-            await Clients.All.SendAsync("ReceiveTemperature", temperature);
+            var decryptedTemperature = DpapiEncryption.Decrypt(encryptedTemperature);
+            await Clients.All.SendAsync("ReceiveTemperature", decryptedTemperature);
         }
     }
 }

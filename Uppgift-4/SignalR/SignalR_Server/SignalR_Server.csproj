@@ -14,4 +14,8 @@
     <PackageReference Include="System.Text.Json" Version="8.0.0-rc.1.23419.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SignalR-Client\SignalR-Client.csproj" />
+  </ItemGroup>
+
 </Project>

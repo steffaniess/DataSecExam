@@ -34,3 +34,10 @@ C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säk
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\obj\Debug\net7.0\SignalR-Client.pdb
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\obj\Debug\net7.0\SignalR-Client.genruntimeconfig.cache
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\obj\Debug\net7.0\ref\SignalR-Client.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll

@@ -1,11 +1,12 @@
-﻿// temperature.js
+﻿
 let connection = new signalR.HubConnectionBuilder()
     .withUrl("/temperatureHub")
     .build();
 
 connection.on("ReceiveTemperature", function (temperature) {
-    const tempElement = document.getElementById("temperatureData");
-    tempElement.textContent = temperature + "°C";
+    let tempElement = document.createElement("div");
+    tempElement.innerHTML = `Temperature: ${temperature}°C`;
+    document.getElementById("temperatureData").appendChild(tempElement);
 });
 
 connection.start().catch(function (err) {
