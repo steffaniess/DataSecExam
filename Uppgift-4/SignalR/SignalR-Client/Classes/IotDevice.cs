@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SignalR_Client.Helpers;
+
+
 
 namespace SignalR_Client.Classes
 {
@@ -56,14 +59,14 @@ namespace SignalR_Client.Classes
                     //Crypting temperature before it is send
                     string encryptedTemperature = DpapiEncryption.Encrypt(temperature.ToString());
 
-                    await _hubConnection.SendAsync("SendTemperature", temperature.ToString());
+                    await _hubConnection.SendAsync("SendTemperature", encryptedTemperature);
                     Console.WriteLine($"Sent temperature: {temperature}");
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error sending temperature: {ex.Message}");
                 }
-                await Task.Delay(5000); //varje rapport uppdateras var 5e min
+                await Task.Delay(5000); //every 5s
 
 
             }

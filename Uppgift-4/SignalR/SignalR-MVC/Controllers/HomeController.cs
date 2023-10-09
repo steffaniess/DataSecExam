@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SignalR_MVC.Models;
 using System.Diagnostics;
 
 namespace SignalR_MVC.Controllers
@@ -24,10 +23,7 @@ namespace SignalR_MVC.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+      
         //New view for temperature
         public IActionResult Temperature()
         {
