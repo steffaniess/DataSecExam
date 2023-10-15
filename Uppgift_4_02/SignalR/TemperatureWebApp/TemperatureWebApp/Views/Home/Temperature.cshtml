@@ -1,0 +1,52 @@
+﻿@*<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head-element ... -->
+    <title>Real-time Temperature Data</title>
+</head>
+
+<body>
+    <h2>Real-time Temperature-Data</h2>
+    <div id="temperatureData">Waiting for temperature...</div>
+
+    <!-- Temperature Display Section -->
+    <div id="temperatureData">
+        Waiting for temperature..
+    </div>
+
+    <!-- SignalR script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.9/signalr.min.js"></script>
+    <script src="~/path_to_js_folder/temperature.js"></script>
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        let connection = new signalR.HubConnectionBuilder()
+            .withUrl("/temperatureHub")
+            .build();
+
+        connection.on("ReceiveTemperature", function (temperature) {
+
+            // Update the temperatureData div with the new temperature
+            let temperatureDataDiv = document.getElementById("temperatureData");
+
+            //When first data comes, clear "waiting for temperature"
+            temperatureDataDiv.innerHTML = "";
+
+            let tempElement = document.createElement("div");
+            tempElement.innerHTML = `Temperature: ${temperature}`;
+            temperatureDataDiv.appendchild(tempElement);
+            //document.getElementById("temperatureData").appendChild(tempElement);
+        });
+
+        connection.start()
+            .then(() => console.log('Connected to the SignalR Hub'))
+            .catch(function (err)
+            {
+                return console.error(err.toString());
+            });
+    </script>
+
+</body>
+</html>
+*@

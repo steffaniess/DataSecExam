@@ -63,3 +63,4 @@ C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säk
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\Server_API\obj\Debug\net7.0\Server_API.pdb
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\Server_API\obj\Debug\net7.0\Server_API.genruntimeconfig.cache
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\Server_API\obj\Debug\net7.0\ref\Server_API.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\Server_API\bin\Debug\net7.0\Newtonsoft.Json.dll

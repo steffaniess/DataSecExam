@@ -6,8 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SignalR_Client.Helpers;
-
-
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace SignalR_Client.Classes
 {
@@ -16,11 +16,13 @@ namespace SignalR_Client.Classes
         private readonly string _hubUrl;
         private readonly Random _random = new Random();
         private HubConnection _hubConnection;
+        private readonly string _deviceId;
 
 
-        public IotDevice(string hubUrl)
+        public IotDevice(string hubUrl, string deviceId)
         {
             _hubUrl = hubUrl;
+            _deviceId = deviceId;
         }
         public async Task InitializeConnectionAsync()
         {
@@ -59,8 +61,13 @@ namespace SignalR_Client.Classes
                     //Crypting temperature before it is send
                     string encryptedTemperature = DpapiEncryption.Encrypt(temperature.ToString());
 
-                    await _hubConnection.SendAsync("SendTemperature", encryptedTemperature);
-                    Console.WriteLine($"Sent temperature: {temperature}");
+                    var dto = new TemperatureDTO { DeviceId = _deviceId, Temperature = encryptedTemperature };
+
+                    var jsonDto = JsonConvert.SerializeObject(dto);
+
+
+                    await _hubConnection.SendAsync("SendTemperature", jsonDto);
+                    Console.WriteLine($"Sent temperature from {_deviceId}: {temperature}");
                 }
                 catch (Exception ex)
                 {

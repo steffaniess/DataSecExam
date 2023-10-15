@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oQM2g042ZPAtaDPCwe4YsMGFatdonfvJPFrJRwH7IyJaa5rcna3JDVIRTXqAi6/dKgjzT2LsljyhNKz+6ErTGw==",
+  "dgSpecHash": "5dv3ilJc/i9WHtKGttHOGarSPTMlL32l0rEFBaGjPG4E4yt44eIOJArSafLOVsCPx73rE8Pfc3sMceYTy6D9NA==",
   "success": true,
   "projectFilePath": "C:\\Users\\stefa\\OneDrive\\Dokument\\Programutvecklare.NET\\10.Datakommunikation&Säkerhet-kurs\\InlämningsUppgift\\Uppgift-4\\SignalR\\Server_API\\Server_API.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0-rc.1.23419.4\\microsoft.extensions.options.configurationextensions.8.0.0-rc.1.23419.4.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0-rc.1.23419.4\\microsoft.extensions.primitives.8.0.0-rc.1.23419.4.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

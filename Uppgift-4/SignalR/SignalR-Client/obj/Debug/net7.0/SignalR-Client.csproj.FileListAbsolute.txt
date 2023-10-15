@@ -41,3 +41,4 @@ C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säk
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Logging.Console.dll
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\stefa\OneDrive\Dokument\Programutvecklare.NET\10.Datakommunikation&Säkerhet-kurs\InlämningsUppgift\Uppgift-4\SignalR\SignalR-Client\bin\Debug\net7.0\Newtonsoft.Json.dll

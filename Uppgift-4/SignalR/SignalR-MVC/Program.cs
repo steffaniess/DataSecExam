@@ -10,17 +10,17 @@ namespace SignalR_MVC
             builder.Services.AddControllersWithViews();
             builder.Services.AddSignalR();
 
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy(name: "OpenArms",
-                                  policy =>
-                                  {
-                                      policy.WithOrigins("http://localhost/", "https://localhost:7122")
-                                      .AllowAnyHeader()
-                                      .AllowAnyMethod()
-                                      .AllowCredentials();
-                                  });
-            });
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddPolicy(name: "OpenArms",
+            //                      policy =>
+            //                      {
+            //                          policy.WithOrigins("http://localhost/", "https://localhost:7122")
+            //                          .AllowAnyHeader()
+            //                          .AllowAnyMethod()
+            //                          .AllowCredentials();
+            //                      });
+            //});
 
             var app = builder.Build();
 
@@ -42,6 +42,12 @@ namespace SignalR_MVC
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+            
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("Content-Security-Policy", "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self' wss://localhost:7216/,com;");
+                await next();
+            });
 
             app.Run();
         }
