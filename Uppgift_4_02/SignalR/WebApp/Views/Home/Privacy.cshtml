@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/SignalR_MVC.styles.css" />
+    <title>Real-time Temperature Data</title>
+</head>
+
+<body>
+    <h2>Real-time Temperature Data</h2>
+
+    <div id="device_001">
+        <h3>Device 001</h3>
+        <div class="temperatureData">Waiting for temperature...</div>
+    </div>
+
+    <div id="device_002">
+        <h3>Device 002</h3>
+        <div class="temperatureData">Waiting for temperature...</div>
+    </div>
+
+    <!-- SignalR script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.9/signalr.min.js"></script>
+
+    <script src="~/js/temperature.js"></script>
+</body>
+</html>
